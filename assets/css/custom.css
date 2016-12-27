@@ -1,0 +1,172 @@
+/* Default CSS */
+#header{
+  min-height: 52px;
+}
+
+/* -- hiding scrollbar -- */
+::-webkit-scrollbar { 
+  display: none;
+}
+
+.ui-content {
+  margin-top: 0px;
+  height: 358px;
+}
+
+.title{
+  text-align:center;
+  font-size:12px;
+}
+
+/* -- Search Box -- */
+div.ui-input-search {
+  position:absolute;
+  top: 0px;
+  width: 120px !important;
+  margin: 6px 0 6px 15px;
+  background:#840000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-color: #6c0000;
+}
+
+.ui-input-text{
+  color: #cbc0c0;
+}
+
+/* -- Records Indicator -- */
+.items_info { 
+  text-align: center;
+  font-size: 0.7em; 
+  color: #cbc0c0; 
+  position: relative; 
+  top: 24px; 
+  line-height: 0; 
+}
+
+/* -- Navigation Button -- */
+#detail_back{
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: none;
+}
+
+#right{
+  position:absolute;
+  top: 3px;
+  right:15px;
+  display: none;
+}
+
+#left{
+  position:absolute;
+  top: 3px;
+  right:50px;
+  display: none;
+}
+
+.ui-focus,
+.ui-btn:focus {
+  -moz-box-shadow: inset 0 0 0px    #000;
+  -webkit-box-shadow: inset 0 0 0px   #000;
+  box-shadow: inset 0 0 0px     #000;
+}
+
+.ui-input-text.ui-focus,
+.ui-input-search.ui-focus {
+  -moz-box-shadow: 0 0 0px    #000;
+  -webkit-box-shadow: 0 0 0px     #000;
+  box-shadow: 0 0 0px       #000;
+}
+
+/* Custom CSS */
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  background-color: #8d0102;
+  border-color: #6f0100;
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+  background-color: #f2edd7;
+  border-color: #c1beab;
+}
+
+.ui-page{
+  background-color: #fefefe;
+}
+
+.main-content {
+  height: 530px;
+  background-color: #fefefe;
+}
+
+#movie-detail {
+  width: 45%;
+  position: fixed;
+  left: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#movie-detail .poster {
+  margin: 50px auto 20px auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#movie-detail .poster img {
+  height: 400px;
+}
+
+#movie-detail .info {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-size: 12px;
+}
+
+#movie-detail .info .title {
+  color: #8d0102;
+  font-weight: bold;
+}
+
+#movie-detail .info .genres {
+  color: #777;
+}
+
+#movies-list {
+  width: 50%;
+  float: right;
+}
+
+.ui-content .ui-listview, .ui-panel-inner>.ui-listview {
+  margin: 0;
+}
+
+.ui-title {
+  color: #fefefe;
+}
+
+/* Responsive Design */
+@media (max-width: 479px) {
+  #movie-detail {
+    width: 100%;
+    clear: both;
+  }
+
+  #movie-detail .poster img {
+    height: 200px;
+  }
+
+  #movies-list {
+    width: 100%;
+    clear: both;
+  }
+}
